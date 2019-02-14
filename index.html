@@ -3,8 +3,12 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<title></title>
+
 </head>
 <body>
+
+	<!-- script tag below is source code for a module that enables cross browser-color pickers. https://caniuse.com/#feat=input-color  -->
+	<script src="jscolorpicker/jscolor.js"></script>
 
 
 	<p>Take a look at this image below. Totally beautiful shot and <a href="https://www.youtube.com/watch?v=urRVZ4SW7WU" target="_blank">inspiring</a>.</p>
@@ -47,11 +51,12 @@
 		<br>
     
     <label for="color-overlay">Color to overlay</label>
-		<input type="color" id="color-overlay" name="body"
-            value="#f6b73c">
+		<!-- <input type="color" id="color-overlay" name="body" -->
+            <!-- value="#f6b73c"> -->
+    <input class="jscolor" value="ab2567" id="color-overlay" name="body">
 
     <br>
-    <button onclick="showImage()">Give me an image</button>
+    <button onclick="showEnhancedImage()">Give me an image</button>
     <br>	
 
 	<!-- 2. get text input from user  -->
