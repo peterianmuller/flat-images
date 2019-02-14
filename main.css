@@ -39,6 +39,10 @@ img.color-overlay-example {
 	display: none;
 }
 
+img.show {
+	display: inherit;
+}
+
 label {
 	margin: 2em;
 }

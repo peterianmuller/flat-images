@@ -1,6 +1,6 @@
 var body = document.querySelector('body')
 var imageContainer = document.querySelector('#image-container');
-var imageURL = "https://assets.imgix.net/unsplash/mountains.jpg"
+var imageURL = "https://assets.imgix.net/unsplash/mountains.jpg?"
 var img = document.createElement("IMG");
 
 // create onclick event listener on .example-text and make the images show/hide
@@ -12,11 +12,11 @@ console.log(exampleTextElements);
 exampleTextElements.forEach((el, i)=>{
 	el.addEventListener('click', ()=>{
 		let img = el.previousSibling.previousSibling;
-		if (img.style.display !== 'none') {
-			img.style.display = 'none';
+		if (!img.classList.contains('show')) {
+			img.classList.add('show');
 		} else {
-			img.style.display = 'inherit';
-		}
+			img.classList.remove('show');
+		}	
 	}); 
 });
 
@@ -39,7 +39,7 @@ var buildURLString = function(color, text) {
 		}).join('');
 
 		imageURL += '?txt=' + textArr + "&w=640&txtclr=fff&txtalign=center%2Cmiddle&txtsize=48";	 
-	}
+	} 
 
 	if (color) {
 		 imageURL += '&blend=' + color + "&bm=normal&balph=50";	
