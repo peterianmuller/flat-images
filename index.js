@@ -3,7 +3,6 @@ var imageContainer = document.querySelector('#image-container');
 var imageURL = "https://assets.imgix.net/unsplash/mountains.jpg?"
 var img = document.createElement("IMG");
 
-// create onclick event listener on .example-text and make the images show/hide
 
 let exampleTextElements = document.querySelectorAll('.example-text');
 
@@ -34,7 +33,7 @@ var buildURLString = function(color, text) {
 		}).join('');
 
 		// add required text fields for text to overlay
-		imageURL += '?txt=' + textArr + "&w=640&txtclr=fff&txtalign=center%2Cmiddle&txtsize=48";	 
+		imageURL += '&txt=' + textArr + "&w=640&txtclr=fff&txtalign=center%2Cmiddle&txtsize=48";	 
 	} 
 
 	if (color) {
@@ -47,9 +46,8 @@ var buildURLString = function(color, text) {
 
 var showEnhancedImage = function() {
 	var color = document.querySelector('#color-overlay').value;
-	//color = color.slice(1);
 	var text = document.querySelector('#text-overlay').value;
 	img.src = buildURLString(color, text);
 	body.appendChild(img);
-	imageURL = "https://assets.imgix.net/unsplash/mountains.jpg";
+	imageURL = "https://assets.imgix.net/unsplash/mountains.jpg?";
 }

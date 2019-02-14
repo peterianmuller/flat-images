@@ -1,5 +1,6 @@
 body {
 	font-size: 12px; 
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 p,
@@ -26,7 +27,6 @@ img#basic {
 	margin: 0 auto;
 }
 
-
 section.examples > article {
 	display: inline-block;
 	width: 40%;
@@ -49,4 +49,5 @@ label {
 
 button {
 	margin-top: 2em;
+	border-radius: 0.5em;
 }
