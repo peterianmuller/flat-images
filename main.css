@@ -1,0 +1,48 @@
+body {
+	font-size: 12px; 
+}
+
+p,
+label,
+input,
+button {
+	font-size: 2em;
+}
+
+#image-container {
+	height: 500px;
+	width: 500px;
+}
+
+img {
+	width: 578px;
+	height: 385px;
+}
+
+img#basic {
+	display: block;
+	max-width: 578px;
+	width:100%;
+	margin: 0 auto;
+}
+
+
+section.examples > article {
+	display: inline-block;
+	width: 40%;
+}
+
+img.text-overlay-example,
+img.color-overlay-example {
+	width: 60%;
+	height: 60%;
+	display: none;
+}
+
+label {
+	margin: 2em;
+}
+
+button {
+	margin-top: 2em;
+}

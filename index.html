@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title></title>
+</head>
+<body>
+
+
+	<p>Take a look at this image below. Totally beautiful shot and <a href="https://www.youtube.com/watch?v=urRVZ4SW7WU" target="_blank">inspiring</a>.</p>
+
+	<img src="https://assets.imgix.net/unsplash/mountains.jpg" id="basic">
+
+	<p>What if we wanted to put our own spin on the image? </p>
+	<p> With the power of imgix's flat image technology, we can! </p>
+
+	<section class="examples">
+
+		<article>
+
+
+			<img src="https://assets.imgix.net/unsplash/mountains.jpg?txt=Check%20out%20the%20sweet%20altitude&w=640&txtclr=fff&txtalign=center%2Cmiddle&txtsize=48&bm=normal" class="text-overlay-example">
+			<button class="example-text">Overlay our own message </button>
+		
+		</article>
+
+		<article>
+
+			<img src="https://assets.imgix.net/unsplash/mountains.jpg?blend=4400bb&w=640&txtclr=fff&txtalign=center%2Cmiddle&txtsize=48&bm=normal&balph=50" class="color-overlay-example">
+			<button class="example-text"> Add an awesome color overlay </button>
+		</article>
+
+	</section>
+
+	<hr>
+
+	<h1>Let's try it out</h1>
+
+
+	<!-- steps -->
+	<!-- 1. get color input from user  -->
+
+		<label for="text-overlay">What text should we place over the mountain image?</label>
+		<input type="text" name="text-overlay" id="text-overlay">
+
+		<br>
+    
+    <label for="color-overlay">Color to overlay</label>
+		<input type="color" id="color-overlay" name="body"
+            value="#f6b73c">
+
+    <br>
+    <button onclick="showImage()">Give me an image</button>
+    <br>	
+
+	<!-- 2. get text input from user  -->
+	<!-- 3. build string with these inputs from user -->
+	<!-- 4. append img element with inputs from user to the page -->
+
+	<!-- <section id="image-container"></section> -->
+
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
